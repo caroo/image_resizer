@@ -1,0 +1,16 @@
+COPYING
+History.txt
+MIT-LICENSE
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+image_resizer.gemspec
+lib/image_resizer.rb
+lib/image_resizer/default_resizer.rb
+lib/image_resizer/dimension.rb
+lib/image_resizer/resize_generator.rb
+test/default_resizer_test.rb
+test/dimension_test.rb
+test/resize_generator_test.rb
+test/test_helper.rb
