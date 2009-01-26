@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{image_resizer}
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Caroo GmbH"]
-  s.date = %q{2009-01-15}
+  s.date = %q{2009-01-26}
   s.description = %q{}
   s.email = ["dev@pkw.de"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc"]
