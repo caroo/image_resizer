@@ -6,14 +6,14 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Caroo GmbH"]
-  s.date = %q{2009-01-26}
+  s.date = %q{2009-01-28}
   s.description = %q{}
   s.email = ["dev@pkw.de"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc"]
   s.files = ["COPYING", "History.txt", "MIT-LICENSE", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "image_resizer.gemspec", "lib/image_resizer.rb", "lib/image_resizer/default_resizer.rb", "lib/image_resizer/dimension.rb", "lib/image_resizer/resize_generator.rb", "test/default_resizer_test.rb", "test/dimension_test.rb", "test/resize_generator_test.rb", "test/test_helper.rb"]
   s.has_rdoc = true
   s.homepage = %q{ImageResizer is an Interface which defines how to call thumbnail-generators. We provide different ImageResizers which use RMagick.}
-  s.post_install_message = %q{PostInstall.txt}
+  s.post_install_message = %q{}
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{image_resizer}

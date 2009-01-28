@@ -3,7 +3,7 @@ require File.dirname(__FILE__) + '/lib/image_resizer'
 
 $hoe = Hoe.new('image_resizer', ImageResizer::VERSION) do |p|
   p.developer('Caroo GmbH', 'dev@pkw.de')
-  p.post_install_message = 'PostInstall.txt'
+  p.post_install_message = File.read('PostInstall.txt')
   p.changes              = p.paragraphs_of("History.txt", 0..1).join("\n\n")
   p.extra_deps = ['rmagick'],
   p.extra_dev_deps = [
