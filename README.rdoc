@@ -1,6 +1,9 @@
 = ImageResizer
 
-ImageResizer is an Interface which defines how to call thumbnail-generators. We provide different ImageResizers which use RMagick.
+== DESCRIPTION
+
+ImageResizer is an Interface which defines how to call thumbnail-generators. We
+provide different ImageResizers which use RMagick.
 
 == REQUIREMENTS:
 
