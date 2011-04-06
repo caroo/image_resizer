@@ -1,3 +1,4 @@
-doc
-image_resizer-*.gem
+.*.sw[pon]
+coverage
 pkg
+.nfs.*

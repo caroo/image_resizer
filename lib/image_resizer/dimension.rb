@@ -1,5 +1,6 @@
 module ImageResizer
   class Dimension
+    include Comparable
   
     attr_reader :width, :height
   
@@ -8,20 +9,23 @@ module ImageResizer
     end
   
     def geometry
-      "#{width}x#{height}"
+      "#{@width}x#{@height}"
     end
-  
-    def ==(other)
-      return false unless other.is_a?(Dimension)
-      return false unless other.width == width
-      return false unless other.height == height
 
-      return true
+    def <=>(other)
+      area <=> other.area
+    end
+
+    def ==(other)
+      Dimension === other && other.width == @width && other.height == @height
+    end
+
+    def area
+      @width * @height
     end
   
     def eql?(other)
       self == other
     end
-  
   end
 end

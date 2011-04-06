@@ -9,7 +9,7 @@ class DefaultResizerTest < Test::Unit::TestCase
     image_data = StringIO.new("image data string")
     image.expects(:image_data).at_least_once.returns(image_data)
     dimension = ImageResizer::Dimension.new(300,225)
-    image.expects(:dimension).times(3).returns(dimension)
+    image.stubs(:dimension).returns(dimension)
     Magick::Image.expects(:from_blob).with(image_data.read).returns([magick_image])
     magick_image.expects(:change_geometry).with(dimension.geometry).returns(thumbnail)
     thumbnail.expects(:border!).with(150,150,"#ffffff")

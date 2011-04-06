@@ -6,5 +6,5 @@ require 'image_resizer/resize_generator'
 require 'image_resizer/default_resizer'
 
 module ImageResizer
-  VERSION = '0.2.1'
+  VERSION = '0.3.0'
 end
